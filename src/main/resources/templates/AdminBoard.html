@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Board</title>
+    <style>
+        body {
+            background-image:url("../static/pic8.jpg");
+            background-size: cover;
+            color:white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        p {
+            font-size: 1.8em;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0 auto;
+            width: 500px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            display: block;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            transition: all 0.3s ease-in-out;
+        }
+
+        a:hover {
+            background-color: #ccc;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Welcome Admin</h1>
+<p>What would you like to do?</p>
+<ul>
+    <li><a href="/add_product">Register Product</a></li>
+    <li><a href="/AllProducts">View Products</a></li>
+    <li><a href="/AllCustomers">View Customers</a></li>
+    <li><a href="/AllOrders">View Orders</a></li>
+
+</ul>
+</body>
+</html>

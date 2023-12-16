@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmation</title>
+    <style>
+        body {
+            background-image:url("../static/pic9.jpg");
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            height: 100vh;
+            color:white;
+            align-items: center;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 1.8em;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0 auto;
+            width: 500px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            display: block;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            font-size: 1.8em;
+            transition: all 0.3s ease-in-out;
+        }
+
+        a:hover {
+            background-color: #ccc;
+        }
+        div{
+            font-size: 2em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1>Thank you for Shopping with us , you will receive your order on</h1>
+
+<div>
+<tr th:each="orders : ${order}">
+    <td th:text="${order.deliveryDate}">
+    </td>
+</tr>
+</div>
+
+<p>You can still buy other products from our website by clicking below 👇</p>
+<ul>
+    <li><a href="/Home">Back</a></li>
+
+</ul>
+</body>
+</html>
